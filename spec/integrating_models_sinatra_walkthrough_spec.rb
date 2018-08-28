@@ -1,3 +1,4 @@
+require 'pry'
 describe App do
 
   describe 'GET /' do
@@ -32,6 +33,7 @@ describe App do
 
     it 'can initialize a new instance of the class' do
       expect(TextAnalyzer.new("hey yall")).to be_an_instance_of(TextAnalyzer)
+      # binding.pry
     end
 
     it 'can have text' do
